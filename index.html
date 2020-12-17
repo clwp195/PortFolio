@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jaehun's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+
+    <!--모바일로 이동하는 스크립트 시작-->
+    <script type="text/javascript"> var UserAgent = navigator.userAgent; if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "m_index.html"; }
+    </script>
+    <!--모바일로 이동하는 스크립트 끝-->
+
+  </head>
+  <body>
+
+    <header id="anchor5">
+      <div class="logo">
+         <img src="img/01_logo.png" alt="JH's Portfolio">
+      </div>
+      <nav>
+        <div class="menu">
+          <ul>
+            <li><a onclick="fnMove('1')">Web Design</a></li>
+            <li><a onclick="fnMove('2')">Identity</a></li>
+            <li><a onclick="fnMove('3')">Package</a></li>
+            <li><a onclick="fnMove('4')">Book Cover</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <!--키비주얼 부문-->
+      <div class="keyvisual"><!--키비주얼이 나오는 영역-->
+        <div class="keyvisual_wrap"><!--키비주얼의 1024pixel을 중앙에 연출-->
+          <div class="keyvisual_title"><!--키비주얼의 title을 처리하는 영역-->
+            <img src="img/03_keyvisual_title.png" alt="단순하게 유지하라 정직하라 그리고 최선을 다하라" >
+          </div>
+        </div>
+      </div>
+
+      <!--프로필 부문-->
+      <div class="profile" >
+        <div class="profile_wrap">
+          <div class="profile_01"><img src="img/04_01.png" alt="title"></div>
+          <div class="profile_02"><img src="img/04_02.png" alt="이름/연락처"></div>
+          <div class="profile_03"><img src="img/04_03.png" alt="학력"></div>
+          <div class="profile_04"><img src="img/04_04.png" alt="경력"></div>
+          <div class="profile_05"><img src="img/04_05.png" alt="자격증"></div>
+          <div class="profile_06"><img src="img/04_photo.png" alt="사진"></div>
+          <div class="profile_07"><img src="img/04_skill.png" alt="스킬"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 1-->
+      <div class="webdesign" id="anchor1">
+        <div class="webdesign_wrap">
+          <div class="web_title"><img src="img/05_web_title.png" alt="title"></div>
+          <div class="web_mockup" data-aos="zoom-in" data-aos-duration="1500"><img src="img/05_web_mockup.png" alt="mockup"></div>
+          <div class="web_text"><img src="img/05_web_text.png" alt="text"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 2-->
+      <div class="identity" id="anchor2">
+        <div class="identity_wrap">
+          <div class="idnetity_title"><img src="img/06_identity_title.png" alt="title"></div>
+          <div class="idnetity_mockup" data-aos="zoom-in" data-aos-duration="1500"><img src="img/06_identity_mockup.png" alt="mockup"></div>
+          <div class="idnetity_text"><img src="img/06_identity_text.png" alt="text"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 3-->
+      <div class="package" id="anchor3">
+        <div class="package_wrap">
+          <div class="package_title"><img src="img/07_package_title.png" alt="title"></div>
+          <div class="package_mockup" data-aos="zoom-in" data-aos-duration="1500"><img src="img/07_package_mockup.png" alt="mockup"></div>
+          <div class="package_text"><img src="img/07_package_text.png" alt="text"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 4-->
+      <div class="bookcover" id="anchor4">
+        <div class="bookcover_wrap">
+          <div class="bookcover_title"><img src="img/08_bookcover_title.png" alt="title"></div>
+          <div class="bookcover_mockup" data-aos="zoom-in" data-aos-duration="1500"><img src="img/08_bookcover_mockup.png" alt="mockup"></div>
+          <div class="bookcover_text"><img src="img/08_bookcover_text.png" alt="text"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--top 버튼-->
+    <a onclick="fnMove('5')"><div class="top_bt"></div></a>
+
+
+    <!--푸터 부문-->
+    <footer>
+      <div class="footer_wrap">
+        <span class="footer_logo"><img src="img/09_footer_logo.png" alt="footer" /></span>
+        <span class="footer_text">Copyright 2020 Jaehun Cha. All right reserved.<br>e-Mail : clwp195@gmail.com</span>
+      </div>
+    </footer>
+
+    <!--스크롤 스크립트-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+        var offset = $("#anchor" + seq).offset();
+        $('html,body').animate({scrollTop : offset.top}, 1200);
+      }
+    </script>
+
+    <!--AOS 스크립트-->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+  </body>
+</html>
